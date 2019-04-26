@@ -35,6 +35,21 @@ https://devnetsandbox.cisco.com/RM/Topology
 ## Next Steps
 #### Export to CSV 
 
+```python
+import csv
+ 
+callmanagerdata = [["customer", "version"],
+          ['CustomerA', '10.5'],
+          ['CustomerB', '11.5']]
+ 
+File = open('callmanager-data.csv', 'w')
+with File:
+    writer = csv.writer(File)
+    writer.writerows(callmanagerdata)
+     
+print("Writing complete!")
+```
+
 #### Export to SQLite
 
 ```python
