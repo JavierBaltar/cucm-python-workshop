@@ -27,3 +27,13 @@ https://devnetsandbox.cisco.com/RM/Topology
 #### Export to CSV 
 
 #### Export to SQLite
+`
+import sqlite3
+
+con_obj = sqlite3.connect("test.db")
+with con_obj:
+            cur_obj = con_obj.cursor()
+            cur_obj.execute("""CREATE TABLE books(title text, author text)""")
+
+print ("Table created")
+´
