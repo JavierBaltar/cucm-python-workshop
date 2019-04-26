@@ -10,7 +10,7 @@
 # cucm-python-workshop
 Cisco Call Manager Python AXL API Programming Tools
 
-### Getting Started
+## Getting Started
 
 
 #### Relevant Libraries
@@ -32,7 +32,7 @@ https://devnetsandbox.cisco.com/RM/Topology
 - zeep
 - A Coffee mug 
 
-### Next Steps
+## Next Steps
 #### Export to CSV 
 
 #### Export to SQLite
@@ -48,7 +48,7 @@ print ("Table created")`
 
 `
 
-### Related
+## Related
 https://developer.cisco.com/site/axl/
 
 * [Cisco Administrative XML (AXL)](https://developer.cisco.com/site/axl/) - AXL is a Soap based API that enables remote provisioning of Unified CM
@@ -59,4 +59,4 @@ https://developer.cisco.com/site/axl/
 
 * **Javier Baltar** - *Initial work* - [GitHub](https://github.com/JavierBaltar)
 
-### Licence
+## Licence
