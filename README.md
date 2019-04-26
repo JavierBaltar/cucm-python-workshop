@@ -1,7 +1,3 @@
-# cucm-python-workshop
-Cisco Call Manager Python AXL API Programming Tools
-
-
 <p align="center">
   <a href="#Getting-Started">Getting Started</a> •
   <a href="#Prerequisites">Prerequisites</a> •
@@ -10,6 +6,9 @@ Cisco Call Manager Python AXL API Programming Tools
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
+
+# cucm-python-workshop
+Cisco Call Manager Python AXL API Programming Tools
 
 ### Getting Started
 
