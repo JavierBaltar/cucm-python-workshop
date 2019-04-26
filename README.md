@@ -2,7 +2,7 @@
   <a href="#Getting-Started">Getting Started</a> •
   <a href="#Prerequisites">Prerequisites</a> •
   <a href="#Installing">Installing</a> •
-  <a href="#credits">Credits</a> •
+  <a href="#Next-Steps">Next Steps</a> •
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
@@ -32,10 +32,10 @@ https://devnetsandbox.cisco.com/RM/Topology
 - zeep
 - A Coffee mug 
 
+### Next Steps
+#### Export to CSV 
 
-### Export to CSV 
-
-### Export to SQLite
+#### Export to SQLite
 
 `$ import sqlite3
 
