@@ -1,10 +1,12 @@
 # cucm-python-workshop
 Cisco Call Manager Python AXL API Programming Tools
 
-### Relevant Libraries
-zeep
+### Getting Started
 
-#### Inline code
+
+#### Relevant Libraries
+
+zeep
 
 `$ python --version`
 
