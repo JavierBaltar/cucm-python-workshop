@@ -37,23 +37,14 @@ https://devnetsandbox.cisco.com/RM/Topology
 
 #### Export to SQLite
 
-`$ import sqlite3
-
-con_obj = sqlite3.connect("test.db")
-with con_obj:
-            cur_obj = con_obj.cursor()
-            cur_obj.execute("""CREATE TABLE books(title text, author text)""")
-
-print ("Table created")`
-
 ```python
 import sqlite3
-con_obj = sqlite3.connect("test.db")
+con_obj = sqlite3.connect("callmanager-data.db")
 with con_obj:
             cur_obj = con_obj.cursor()
-            cur_obj.execute("""CREATE TABLE books(title text, author text)""")
+            cur_obj.execute("""CREATE TABLE cucm_version(customer text, version text)""")
 
-print ("Table created")
+print ("Table created!")
 ```
 
 ## Related
