@@ -1,21 +1,31 @@
 # cucm-python-workshop
 Cisco Call Manager Python AXL API Programming Tools
 
+
+<p align="center">
+  <a href="#Getting-Started">Getting Started</a> •
+  <a href="#Prerequisites">Prerequisites</a> •
+  <a href="#Installing">Installing</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
+
 ### Getting Started
 
 
-#### Relevant Libraries
+### Relevant Libraries
 
 zeep
 
 `$ python --version`
 
-#### Cisco DevNet Sandboxes
+### Cisco DevNet Sandboxes
 https://devnetsandbox.cisco.com/RM/Topology
 
 ![](ciscoDevnetSandboxes.gif)
 
-#### Toolkit
+### Toolkit
 
 - Python. I am using Python 2 and PyCharm IDE.
 - A CUCM instance
@@ -24,9 +34,9 @@ https://devnetsandbox.cisco.com/RM/Topology
 - A Coffee mug 
 
 
-#### Export to CSV 
+### Export to CSV 
 
-#### Export to SQLite
+### Export to SQLite
 
 `$ import sqlite3
 
@@ -38,3 +48,5 @@ with con_obj:
 print ("Table created")`
 
 `
+
+### Licence
