@@ -47,9 +47,13 @@ with con_obj:
 print ("Table created")`
 
 ```python
-def is_palindrome(s):
-    # type: (str) -> bool
-    return s == s[::-1]
+import sqlite3
+con_obj = sqlite3.connect("test.db")
+with con_obj:
+            cur_obj = con_obj.cursor()
+            cur_obj.execute("""CREATE TABLE books(title text, author text)""")
+
+print ("Table created")
 ```
 
 ## Related
