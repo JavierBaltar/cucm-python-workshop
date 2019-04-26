@@ -17,7 +17,7 @@ https://devnetsandbox.cisco.com/RM/Topology
 
 #### Toolkit
 
-- Python
+- Python. I am using Python 2 and PyCharm IDE.
 - A CUCM instance
 - AXLSQLToolkit 
 - zeep
@@ -27,8 +27,8 @@ https://devnetsandbox.cisco.com/RM/Topology
 #### Export to CSV 
 
 #### Export to SQLite
-`$
-import sqlite3
+
+`$ import sqlite3
 
 con_obj = sqlite3.connect("test.db")
 with con_obj:
@@ -36,3 +36,5 @@ with con_obj:
             cur_obj.execute("""CREATE TABLE books(title text, author text)""")
 
 print ("Table created")`
+
+`
