@@ -12,9 +12,9 @@ zeep
 
 #### Toolkit
 
-Python
-A CUCM instance
-AXLSQLToolkit 
-zeep
-A Coffee mug 
+- Python
+- A CUCM instance
+- AXLSQLToolkit 
+- zeep
+- A Coffee mug 
 
