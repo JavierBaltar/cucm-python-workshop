@@ -46,7 +46,11 @@ with con_obj:
 
 print ("Table created")`
 
-`
+```python
+def is_palindrome(s):
+    # type: (str) -> bool
+    return s == s[::-1]
+```
 
 ## Related
 
