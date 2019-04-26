@@ -14,18 +14,18 @@ Cisco Call Manager Python AXL API Programming Tools
 ### Getting Started
 
 
-### Relevant Libraries
+#### Relevant Libraries
 
 zeep
 
 `$ python --version`
 
-### Cisco DevNet Sandboxes
+#### Cisco DevNet Sandboxes
 https://devnetsandbox.cisco.com/RM/Topology
 
 ![](ciscoDevnetSandboxes.gif)
 
-### Toolkit
+#### Toolkit
 
 - Python. I am using Python 2 and PyCharm IDE.
 - A CUCM instance
