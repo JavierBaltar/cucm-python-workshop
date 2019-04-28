@@ -67,6 +67,10 @@ print ("Table created!")
 
 * [Cisco Administrative XML (AXL)](https://developer.cisco.com/site/axl/) - AXL is a Soap based API that enables remote provisioning of Unified CM
 
+* [Python Suds-jurko Library](https://pypi.org/project/suds-jurko/) - Suds is a lightweight SOAP-based web service client for Python licensed under LGPL
+
+
+
  
 
 ## Authors
