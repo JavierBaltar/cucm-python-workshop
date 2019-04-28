@@ -10,7 +10,7 @@ Cisco Call Manager Python AXL API Programming Tools
 </p>
 
 ## Getting Started
-The Administrative XML Web Service (AXL) is a XML/SOAP based interface that provides a mechanism for inserting, retrieving, updating and removing data from the Unified Communication configuration database. Developers can send and receive SOAP messages that adhere to the CUCM Web Service Description Language (WSDL) definition.
+The Administrative XML Web Service (AXL) is a XML/SOAP based interface that provides a mechanism for inserting, retrieving, updating and removing data from the Unified Communication configuration database. SOAP messages are defined by the CUCM Web Service Description Language (WSDL)
 
 ## Prerequisites:
 
@@ -54,6 +54,7 @@ response = Connect_object.service.listUser(
             'userid': True,
             'telephoneNumber': True
         })
+    
     print(response['return']['user'])
 ```
 
@@ -80,6 +81,7 @@ print("Writing complete!")
 ```python
 import sqlite3
 con_obj = sqlite3.connect("callmanager-data.db")
+
 with con_obj:
             cur_obj = con_obj.cursor()
             cur_obj.execute("""CREATE TABLE cucm_version(customer text, version text)""")
