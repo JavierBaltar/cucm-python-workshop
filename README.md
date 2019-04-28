@@ -38,15 +38,15 @@ WSDL = urljoin('file:', pathname2url(abspath('schema/AXLAPI.wsdl')))
 if hasattr(ssl, '_create_unverified_context'):
     ssl._create_default_https_context = ssl._create_unverified_context
 
-CLIENT = Client(WSDL, location='https://%s:8443/axl/' % ('10.10.20.1'),
+Connect_object = Client(WSDL, location='https://%s:8443/axl/' % ('10.10.20.1'),
                 username='administrator', password='cisco')
                     
 ```
-#### list of all End Users with their telephone number
+#### List end users and telephone numbers
 
 ```python
                     
-response = CLIENT.service.listUser(
+response = Connect_object.service.listUser(
         searchCriteria={
             'userid': '%'
         },
