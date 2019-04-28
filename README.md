@@ -2,6 +2,7 @@
 Cisco Call Manager Python AXL API Programming Tools
 <p align="center">
   <a href="#Getting-Started">Getting Started</a> •
+  <a href="#Prerequisites">Prerequisites</a> •
   <a href="#Code">Code</a> •
   <a href="#Next-Steps">Next Steps</a> •
   <a href="#related">Related</a> •
@@ -10,25 +11,14 @@ Cisco Call Manager Python AXL API Programming Tools
 
 ## Getting Started
 
+## Prerequisites:
 
-### Relevant Libraries
-
-zeep
-
-`$ python --version`
-
-### Cisco DevNet Sandboxes
-https://devnetsandbox.cisco.com/RM/Topology
+- suds-jurko package 
+- Cisco AXLSQLToolkit 
+- Cisco DevNet Sandboxes https://devnetsandbox.cisco.com/RM/Topology
 
 ![](ciscoDevnetSandboxes.gif)
 
-### Toolkit
-
-- Python. I am using Python 2 and PyCharm IDE.
-- A CUCM instance
-- AXLSQLToolkit 
-- zeep
-- A Coffee mug 
 
 ## Code
 
