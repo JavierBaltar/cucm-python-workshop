@@ -68,7 +68,7 @@ print ("Table created!")
 
 * [Python Suds-jurko Library](https://pypi.org/project/suds-jurko/) - Suds is a lightweight SOAP-based web service client for Python licensed under LGPL
 
-
+* [Python Zeep Library](https://pypi.org/project/zeep/) - A fast and modern Python SOAP client
 
  
 
