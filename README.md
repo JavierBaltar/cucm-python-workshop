@@ -10,10 +10,11 @@ Cisco Call Manager Python AXL API Programming Tools
 </p>
 
 ## Getting Started
+The Administrative XML Web Service (AXL) is a XML/SOAP based interface that provides a mechanism for inserting, retrieving, updating and removing data from the Unified Communication configuration database. Developers can send and receive SOAP messages that adhere to the CUCM Web Service Description Language (WSDL) definition.
 
 ## Prerequisites:
 
-- suds-jurko package 
+- suds-jurko Python library
 - Cisco AXLSQLToolkit 
 - Cisco DevNet Sandboxes https://devnetsandbox.cisco.com/RM/Topology
 
@@ -23,31 +24,32 @@ Cisco Call Manager Python AXL API Programming Tools
 ## Code
 
 ```python
-from suds.client import Client  
-   
-# Define AXL Authentication Credentials for Cluster  
-username = "username"  
-password = "password"  
-   
-# Define AXL URL for Cluster  
-url = "https://CUCM:8443/axl/"  
-   
-# Define WSDL Location 
-wsdl = "file:///C:/pathto/AXLAPI.wsdl"  
-   
-# Build SUDS Client Connection  
-client = Client(location=url, url=wsdl, retxml=False, username=username, password=password)
-# Open and read csv File, split on new line
-data = open("login.csv", "r").read().split("\n")
-   
-# loop through and break out individual components  
-for line in data[1:]:  
-  mac,profile,uid = line.split(",") 
-  print(mac,profile,uid)
-  
-  # Call client service "doDeviceLogin" method and pass in the parameters  
-  x = client.service.doDeviceLogin(deviceName=dn, loginDuration='0', profileName=pn, userId=uid)  
-  print(x)
+# Import modules
+from os.path import abspath
+from urllib.parse import urljoin
+from urllib.request import pathname2url
+import ssl
+from suds.client import Client
+
+# Create a Client object
+WSDL = urljoin('file:', pathname2url(abspath('schema/AXLAPI.wsdl')))
+
+# Allow insecure connections
+if hasattr(ssl, '_create_unverified_context'):
+    ssl._create_default_https_context = ssl._create_unverified_context
+
+CLIENT = Client(WSDL, location='https://%s:8443/axl/' % ('10.10.20.1'),
+                username='administrator', password='cisco')
+                                
+response = CLIENT.service.listUser(
+        searchCriteria={
+            'userid': '%'
+        },
+        returnedTags={
+            'userid': True,
+            'telephoneNumber': True
+        })
+    print(response['return']['user'])
 ```
 
 ## Next Steps
