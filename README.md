@@ -1,6 +1,5 @@
 # cucm-python-workshop
 Cisco Call Manager Python AXL API Programming Tools
-
 <p align="center">
   <a href="#Getting-Started">Getting Started</a> •
   <a href="#Code">Code</a> •
