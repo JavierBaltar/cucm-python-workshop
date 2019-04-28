@@ -40,7 +40,12 @@ if hasattr(ssl, '_create_unverified_context'):
 
 CLIENT = Client(WSDL, location='https://%s:8443/axl/' % ('10.10.20.1'),
                 username='administrator', password='cisco')
-                                
+                    
+```
+#### list of all End Users with their telephone number
+
+```python
+                    
 response = CLIENT.service.listUser(
         searchCriteria={
             'userid': '%'
