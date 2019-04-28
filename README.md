@@ -1,30 +1,29 @@
-<p align="center">
-  <a href="#Getting-Started">Getting Started</a> •
-  <a href="#Prerequisites">Prerequisites</a> •
-  <a href="#Installing">Installing</a> •
-  <a href="#Next-Steps">Next Steps</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
-</p>
-
 # cucm-python-workshop
 Cisco Call Manager Python AXL API Programming Tools
+
+<p align="center">
+  <a href="#Getting-Started">Getting Started</a> •
+  <a href="#Code">Code</a> •
+  <a href="#Next-Steps">Next Steps</a> •
+  <a href="#related">Related</a> •
+  <a href="#Authors">Authors</a>
+</p>
 
 ## Getting Started
 
 
-#### Relevant Libraries
+### Relevant Libraries
 
 zeep
 
 `$ python --version`
 
-#### Cisco DevNet Sandboxes
+### Cisco DevNet Sandboxes
 https://devnetsandbox.cisco.com/RM/Topology
 
 ![](ciscoDevnetSandboxes.gif)
 
-#### Toolkit
+### Toolkit
 
 - Python. I am using Python 2 and PyCharm IDE.
 - A CUCM instance
@@ -32,8 +31,10 @@ https://devnetsandbox.cisco.com/RM/Topology
 - zeep
 - A Coffee mug 
 
+## Code
+
 ## Next Steps
-#### Export to CSV 
+### Export to CSV 
 
 ```python
 import csv
@@ -50,7 +51,7 @@ with File:
 print("Writing complete!")
 ```
 
-#### Export to SQLite
+### Export to SQLite
 
 ```python
 import sqlite3
@@ -71,5 +72,3 @@ print ("Table created!")
 ## Authors
 
 * **Javier Baltar** - *Initial work* - [GitHub](https://github.com/JavierBaltar)
-
-## Licence
